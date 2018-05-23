@@ -14,7 +14,7 @@ class HttpControllerTest extends WebTestCase
 
         $this->assertEquals(
             'Welcome to the Http:clientServerInteraction page',
-            $crawler->filterXPath('//body/h1')->first()->text()
+            $crawler->filter('body > h1')->first()->text()
         );
     }
 
